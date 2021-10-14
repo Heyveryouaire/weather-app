@@ -1,0 +1,5 @@
+POST https://app.digiforma.com/api/v1/graphql
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ODM2MTc5LCJtb2RlIjoiZXh0cmFuZXQiLCJ0eXBlIjoidHJhaW5lZSIsImV4cCI6MTkyNTY4MzIwMCwiaXNzIjoiRGlnaWZvcm1hIn0.GtXov3WYnAxlQKWy1UuH_0Vj9ny_RNAWQU4i7DJvp0A
+content-type: application/json
+
+{"operationName":null,"variables":{"id":"236167"},"query":"query ($id: ID!) {\n  trainingSession(id: $id) {\n    id\n    pendingSignins {\n      startTime\n      endTime\n      date\n      slot\n      __typename\n    }\n    __typename\n  }\n}\n"}
